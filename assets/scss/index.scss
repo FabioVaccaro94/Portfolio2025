@@ -1,0 +1,179 @@
+$primary-color: #0a1128;
+$secondary-color: #001f54;
+$tertiary-color: #003566;
+$hover-color: #1abc9c;
+$main-text-color: #8d9cb1;
+$white: #ffffff;
+$sidebar-bg: url(../img/sidebar-background-img.jpg);
+$font-family: "Inter", sans-serif;
+
+body {
+  font-family: $font-family;
+  scroll-behavior: smooth;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  background: $primary-color;
+  color: $white;
+  z-index: 10;
+
+  .nav-and-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+
+    span {
+      display: block;
+      height: 3px;
+      background-color: $white;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .socials .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: $sidebar-bg;
+    background-size: cover;
+    background-position: center;
+
+    .profile {
+      text-align: left;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .nav-and-socials {
+      margin-top: 3rem;
+    }
+
+    .socials {
+      margin-top: 3rem;
+    }
+  }
+
+  a {
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: $hover-color;
+  }
+
+  .sidebar a:hover {
+    color: $hover-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-color: $primary-color;
+  }
+}
+
+.main {
+  background: linear-gradient($primary-color, $secondary-color);
+  color: $white;
+
+  p {
+    color: $main-text-color;
+  }
+
+  a {
+    color: $main-text-color;
+    text-decoration: none;
+  }
+
+  .section-title {
+    font-weight: bolder;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .projects {
+    .container {
+      padding-left: 0;
+    }
+    .project-title {
+      display: inline;
+      color: $white;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .project-title i {
+      font-size: 0.8rem;
+    }
+    .card-project {
+      background-color: transparent;
+      border: none;
+    }
+    .card-project img {
+      margin-top: 1rem;
+      max-width: 150px;
+      max-height: 70px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding-left: 0;
+    }
+    .badge {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  color: $main-text-color;
+}
+
+.about {
+  scroll-margin-top: 200px;
+}
+
+.projects {
+  scroll-margin-top: 200px;
+}

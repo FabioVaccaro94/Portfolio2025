@@ -1,0 +1,150 @@
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  background: #0a1128;
+  color: #ffffff;
+  z-index: 10;
+}
+.sidebar .nav-and-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar .profile {
+  text-align: center;
+  padding: 1rem;
+}
+.sidebar .navbar-toggler:focus,
+.sidebar .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.sidebar .hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+}
+.sidebar .hamburger-icon span {
+  display: block;
+  height: 3px;
+  background-color: #ffffff;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sidebar .socials .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: url(../img/sidebar-background-img.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .sidebar .profile {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .sidebar .nav-and-socials {
+    margin-top: 3rem;
+  }
+  .sidebar .socials {
+    margin-top: 3rem;
+  }
+  a {
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #1abc9c;
+  }
+  .sidebar a:hover {
+    color: #1abc9c;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    background-color: #0a1128;
+  }
+}
+.main {
+  background: linear-gradient(#0a1128, #001f54);
+  color: #ffffff;
+}
+.main p {
+  color: #8d9cb1;
+}
+.main a {
+  color: #8d9cb1;
+  text-decoration: none;
+}
+.main .section-title {
+  font-weight: bolder;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.main .projects .container {
+  padding-left: 0;
+}
+.main .projects .project-title {
+  display: inline;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.main .projects .project-title i {
+  font-size: 0.8rem;
+}
+.main .projects .card-project {
+  background-color: transparent;
+  border: none;
+}
+.main .projects .card-project img {
+  margin-top: 1rem;
+  max-width: 150px;
+  max-height: 70px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .projects .card-body {
+  padding-left: 0;
+}
+.main .projects .badge {
+  background-color: #0a1128;
+}
+
+.footer {
+  width: 100%;
+  color: #8d9cb1;
+}
+
+.about {
+  scroll-margin-top: 200px;
+}
+
+.projects {
+  scroll-margin-top: 200px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,40 @@
+body {
+    background-color: #0a1128;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #0a1128, #001f54);
+    color: #FFFFFF;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1f4e36;
+}
